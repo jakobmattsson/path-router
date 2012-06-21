@@ -2,7 +2,7 @@
   "name": "path-router",
   "description": "Calling functions using path-like strings",
   "main": "./build/router.js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "engines": {
     "node": ">=0.6.0"
