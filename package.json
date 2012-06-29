@@ -2,7 +2,7 @@
   "name": "path-router",
   "description": "Calling functions using path-like strings",
   "main": "./lib/router.js",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "repository": {
     "type": "git",
