@@ -16,7 +16,7 @@ findMatches = (functions, path) ->
     null
   ).filter (e) -> e
 
-exports.version = "0.2.1"
+exports.version = "0.2.2"
 
 exports.create = () ->
   functions = {}
