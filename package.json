@@ -6,7 +6,7 @@
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "repository": {
     "type": "git",
-    "url": "git@github.com:jakobmattsson/protoplast.git"
+    "url": "git@github.com:jakobmattsson/path-router.git"
   },
   "engines": {
     "node": ">=0.6.0"
