@@ -20,9 +20,15 @@ findMatches = (functions, path) ->
 exports.create = () ->
   functions = {}
 
-  trigger = (path, done) ->
-    matches = findMatches functions, path
+  trigger = (path, done, args) ->
+    if !args? && typeof done == 'object'
+      args = done
+      done = ->
+
     done ?= ->
+    args ?= {}
+
+    matches = findMatches functions, path
 
     paramCounts = matches.map (m) -> Object.keys(m.params).length
     minParams = Math.min(paramCounts...)
@@ -33,7 +39,12 @@ exports.create = () ->
     else if matches.length > 1
       done 'more than one match'
     else
-      functions[matches[0].page] matches[0].params, done
+      params = {}
+      Object.keys(matches[0].params).forEach (key) ->
+        params[key] = matches[0].params[key]
+      Object.keys(args).forEach (key) ->
+        params[key] = args[key]
+      functions[matches[0].page] params, done
 
   register = (path, callback) ->
     functions[path] = callback
