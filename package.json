@@ -4,6 +4,10 @@
   "main": "./lib/router.js",
   "version": "0.2.0",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jakobmattsson/protoplast.git"
+  },
   "engines": {
     "node": ">=0.6.0"
   },
