@@ -1,7 +1,7 @@
 {
   "name": "path-router",
   "description": "Calling functions using path-like strings",
-  "main": "./build/router.js",
+  "main": "./lib/router.js",
   "version": "0.2.0",
   "author": "Jakob Mattsson <jakob.mattsson@gmail.com> (jakobmattsson.se)",
   "engines": {
@@ -11,6 +11,6 @@
     "coffee-script": "1.3.x"
   },
   "scripts": {
-    "prepublish": "coffee -c -o build src/router.coffee"
+    "prepublish": "coffee -c -o lib src"
   }
 }
